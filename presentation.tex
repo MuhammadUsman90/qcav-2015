@@ -45,10 +45,17 @@
 
 \setbeamercovered{transparent}
 \resetcounteronoverlays{subfigure}
+%remove the icon
+\setbeamertemplate{bibliography item}{}
+
+%remove line breaks
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
 
 \usepackage{multirow}
-\usepackage{biblatex}
-\addbibresource{bibtex.bib}
+%\usepackage{biblatex}
+%\addbibresource{bibtex.bib}
 
 \title{\Large{A Boosting Approach for Prostate Cancer Detection using Multi-Parametric MRI}}
 \author{\scriptsize{Guillaume Lemaitre \\ \texttt{guillaume.lemaitre@u-bourgogne.fr}}}
@@ -439,7 +446,7 @@
   \end{block}
 \end{frame}
 
-\subsection{Conclusion}
+\section{Conclusion}
 
 \begin{frame}
   \frametitle{Conclusion}
@@ -458,6 +465,15 @@
     \item Perform a full benchmark study of the current methods!!!!
     \end{itemize}
   \end{redblock}
+\end{frame}
+
+\section*{References}
+
+\begin{frame}[allowframebreaks]
+        \frametitle{References}
+        \nocite{Ferlay2010,Siegel2014,Etzioni2002,Chou2011,Andriole2009,Hugosson2010,Schroeder2012,Lemaitre2015,Litjens2011,Litjens2012a,Litjens2014,Liu2013,Peng2013,Viswanath2011,johnson2013,Becker2013,Friedman1999,Friedman2000,Freund1997,Zheng2008,Chan2003,Zhang2005,Caruana2006}
+        \bibliographystyle{apalike}
+        \bibliography{literature_review.bib}
 \end{frame}
 
 
